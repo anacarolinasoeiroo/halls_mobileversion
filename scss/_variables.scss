@@ -1,0 +1,43 @@
+$font-italic: 'Azo Sans Lt', sans-serif;
+$font-black:'Azo Sans Bk', sans-serif;
+$font-medium:'Azo Sans Md', sans-serif;
+
+
+
+
+@font-face {
+    font-family: 'Azo Sans Lt';
+    src: url(../font/AzoSans-LightItalic.woff);
+}
+@font-face {
+    font-family:'Azo Sans Md';
+    src: url(../font/AzoSans-Medium.woff);
+}
+@font-face {
+    font-family: 'Azo Sans Bk';
+    src: url(../font/AzoSans-Black.woff);
+}
+
+/* Colors */;
+$purple: #692976;
+$white: #ffffff;
+$blue: #00AEEF;
+$orange: #E45825;
+$lightblue: #088CCC;
+$darkblue: #221E53;
+$yellow: #FDBD13;
+$magenta: #BC1F50;
+
+/* Fonts */
+$AzoSansBlack: 'AzoSansBlack';
+$AzoSansBlackItalic: 'AzoSansBlackItalic';
+$AzoSansBold: 'AzoSansBold';
+$AzoSansBoldItalic: 'AzoSansBoldItalic';
+$AzoSansItalic: 'AzoSansItalic';
+$AzoSansLight: 'AzoSansLight';
+$AzoSansLightItalic: 'AzoSansLightItalic';
+$AzoSansMedium: 'AzoSansMedium';
+$font-AzoSansMediumItalic: 'AzoSansMediumItalic';
+$AzoSansRegular: 'AzoSansRegular';
+$AzoSansThin: 'AzoSansThin';
+$AzoSansThinItalic: 'AzoSansThinItalic';

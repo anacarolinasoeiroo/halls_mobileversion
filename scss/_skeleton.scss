@@ -1,0 +1,45 @@
+body{
+    width: 375px;
+    height: 100%; 
+    margin: auto;
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.main-btn {
+    position: relative;
+    border: 3px solid #088ccc;        
+    height: 42px;
+    width: 180px;
+    padding: 10px;
+    a {
+        background: #ffffff;
+        border: 3px solid #088ccc;
+        box-sizing: border-box;
+        height: 42px;
+        width: 180px;
+        padding: 10px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $font-medium;
+        font-size: 16px;
+        font-weight: 700;
+        color: $darkblue;
+        &:hover {
+            color: $white;
+            background-color: $lightblue;
+        }
+    }
+
+}
+.wrapper {
+    max-width: 345px;
+    width: 100%;
+    margin:0 auto;
+}

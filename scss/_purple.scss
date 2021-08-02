@@ -1,0 +1,93 @@
+//hero 3Mil€
+#hero-mil {
+    height: 400px;
+    width: 100%;
+    background-image: url(../img/bkgr-number.png);
+    background-position: center;
+    background-size: auto;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    .teaser {
+        border: 3px solid #e45825;
+        max-width: 292px;
+        height: 274px;
+        position: relative;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        video {
+            position: absolute;
+            top: -10px;
+            left: -5px;
+            border: 3px solid #e45825;
+            background-color: #fff;
+            object-fit: cover;
+        }
+    }
+    .wrapper {
+        h1 {
+            font-family: $font-black;
+            position: absolute;
+            bottom: 15px;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 26px;
+            color: #fff;
+        }
+    }
+}
+//hero Quadriculado
+#hero-quad {
+    background-image: url(../img/bkgr-grid.png);
+    background-position: center;
+    background-size: auto;
+    height: 410px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    position: relative;
+
+    .wrapper {
+        h2 {
+            display: inline-block;
+            width: 290px;
+            text-align: center;
+            font-family: $font-medium;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+    .main-btn {
+        margin:0 auto;
+        margin-top: 40px;
+        a {
+        }
+    }
+    .img-block{
+        margin: 0 auto;
+        background-image: url(../img/img-block.png);
+        background-position: center;
+        background-size: cover; 
+        height: 218px;
+        width: 100%;
+        margin-top: -45px;
+    }
+    .tit-dat{
+        margin: 0 auto;
+        background-image: url(../img/tit-dat.png);
+        background-position: center;
+        background-size: contain;
+        width: 270px;
+        height: 80px;
+        background-repeat: no-repeat;
+        margin-top: 36px; 
+    }
+}

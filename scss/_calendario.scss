@@ -1,0 +1,22 @@
+#calen {
+    height: 185px;
+    width: 100%;
+    .calendario {
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: normal;
+            align-content: stretch;
+            li {
+                width: 25%;
+                a{
+                    img{
+                            object-fit: contain ;                    }
+                }
+            }
+        }
+    }
+}

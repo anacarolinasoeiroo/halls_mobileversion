@@ -1,0 +1,1080 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'Azo Sans Lt';
+  src: url(../font/AzoSans-LightItalic.woff);
+}
+
+@font-face {
+  font-family: 'Azo Sans Md';
+  src: url(../font/AzoSans-Medium.woff);
+}
+
+@font-face {
+  font-family: 'Azo Sans Bk';
+  src: url(../font/AzoSans-Black.woff);
+}
+
+/* Colors */
+/* Fonts */
+body {
+  width: 375px;
+  height: 100%;
+  margin: auto;
+}
+
+body .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-btn {
+  position: relative;
+  border: 3px solid #088ccc;
+  height: 42px;
+  width: 180px;
+  padding: 10px;
+}
+
+.main-btn a {
+  background: #ffffff;
+  border: 3px solid #088ccc;
+  box-sizing: border-box;
+  height: 42px;
+  width: 180px;
+  padding: 10px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Azo Sans Md", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #221E53;
+}
+
+.main-btn a:hover {
+  color: #ffffff;
+  background-color: #088CCC;
+}
+
+.wrapper {
+  max-width: 345px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #221E53;
+}
+
+header nav {
+  width: 100%;
+  padding: 15px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero-mil {
+  height: 400px;
+  width: 100%;
+  background-image: url(../img/bkgr-number.png);
+  background-position: center;
+  background-size: auto;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+#hero-mil .teaser {
+  border: 3px solid #e45825;
+  max-width: 292px;
+  height: 274px;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hero-mil .teaser video {
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  border: 3px solid #e45825;
+  background-color: #fff;
+  object-fit: cover;
+}
+
+#hero-mil .wrapper h1 {
+  font-family: "Azo Sans Bk", sans-serif;
+  position: absolute;
+  bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 26px;
+  color: #fff;
+}
+
+#hero-quad {
+  background-image: url(../img/bkgr-grid.png);
+  background-position: center;
+  background-size: auto;
+  height: 410px;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+#hero-quad .wrapper h2 {
+  display: inline-block;
+  width: 290px;
+  text-align: center;
+  font-family: "Azo Sans Md", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#hero-quad .main-btn {
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+#hero-quad .img-block {
+  margin: 0 auto;
+  background-image: url(../img/img-block.png);
+  background-position: center;
+  background-size: cover;
+  height: 218px;
+  width: 100%;
+  margin-top: -45px;
+}
+
+#hero-quad .tit-dat {
+  margin: 0 auto;
+  background-image: url(../img/tit-dat.png);
+  background-position: center;
+  background-size: contain;
+  width: 270px;
+  height: 80px;
+  background-repeat: no-repeat;
+  margin-top: 36px;
+}
+
+#calen {
+  height: 185px;
+  width: 100%;
+}
+
+#calen .calendario ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: normal;
+  align-content: stretch;
+}
+
+#calen .calendario ul li {
+  width: 25%;
+}
+
+#calen .calendario ul li a img {
+  object-fit: contain;
+}
+
+#yellow {
+  width: 100%;
+  height: 348px;
+  background-image: url(../img/bckg-yellow.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-top: 0;
+  background-color: #FDBD13;
+}
+
+#yellow .main-btn {
+  display: inline-block;
+  margin: 0 auto;
+  position: absolute;
+  margin-top: 88px;
+  left: 20%;
+  width: 227px;
+}
+
+#yellow .main-btn a {
+  width: 227px;
+}
+
+#pink {
+  background-image: url(../img/bkg-pink.png);
+  background-size: contain;
+  width: 100%;
+  height: 655px;
+  position: relative;
+}
+
+#pink .pod-img {
+  height: 274px;
+  max-width: 289px;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#pink .tit-pod {
+  position: absolute;
+  z-index: 1;
+  left: 23px;
+  top: 28px;
+}
+
+#pink .tit-pod p {
+  color: #fff;
+  padding-top: 12px;
+  font-family: "Azo Sans Lt", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#pink .listen {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pink .listen h2 {
+  display: inline-block;
+  width: 280px;
+  font-family: "Azo Sans Md", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin-top: 36px;
+  margin-left: 20px;
+  line-height: 21px;
+}
+
+#pink .slider {
+  padding-top: 290px;
+}
+
+#pink .slider div img {
+  height: 106px;
+}
+
+#pink .bottom-title {
+  width: 90%;
+  margin-top: 59px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pink .socials {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+#pink .socials ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  list-style-type: none;
+}
+
+#footer {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 51px;
+  background-color: #221E53;
+}
+
+#footer nav {
+  width: 85%;
+  height: 100%;
+  margin: auto;
+  padding-top: 15px;
+}
+
+#footer nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  list-style-type: none;
+}
+
+#footer nav ul li {
+  list-style-type: none;
+}
+
+#footer nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 10px;
+  font-family: "Azo Sans Md", sans-serif;
+  font-weight: 400;
+}
+
+#hero {
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/signup_bkg.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero img {
+  width: 300px;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.tabs img {
+  height: 56px;
+}
+
+.form {
+  background-image: url(../img/signup-form-bkg.png);
+  height: 874px;
+  background-size: cover;
+  margin-top: 0;
+  width: 100%;
+}
+
+.form .upload {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.form .upload p {
+  font-family: "Azo Sans Md", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.form .form-details {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form .form-details h2 {
+  font-family: "Azo Sans Md", sans-serif;
+  font-size: 16px;
+  padding-top: 90px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.form .form-details label {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  padding-top: 12px;
+}
+
+.form .form-details input[type="text"] {
+  border-color: #ffd;
+  padding: 10px 70px;
+  color: #088CCC, 100%;
+  text-align: left;
+}
+
+.form .form-details p {
+  font-family: "Azo Sans Md", sans-serif;
+  font-size: 10px;
+  padding-top: 15px;
+  color: #fff;
+}
+
+.inscricao {
+  background-color: #088CCC;
+  background-image: url("../images/bk-quadrados.png");
+}
+
+.inscricao .wrapper {
+  flex-direction: column;
+}
+
+.inscricao .wrapper .tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inscricao .wrapper .tab div.tablinks:hover {
+  cursor: pointer;
+}
+
+.inscricao .wrapper .tab div.tablinks.button {
+  font-family: "AzoSansMedium";
+  font-size: 22px;
+  text-align: center;
+  color: #ffffff;
+  border: 0;
+  padding: 0;
+  width: 187px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inscricao .wrapper .tab div.tablinks.TalentShow {
+  background-color: #088CCC;
+}
+
+.inscricao .wrapper .tab div.tablinks.Podcast {
+  background-color: #E45825;
+}
+
+.inscricao .wrapper #TalentShow {
+  background-color: #088CCC;
+  padding-top: 75px;
+}
+
+.inscricao .wrapper #TalentShow .upload {
+  text-align: center;
+}
+
+.inscricao .wrapper #TalentShow .upload a {
+  display: flex;
+  align-items: center;
+  padding-left: 65px;
+  width: 350px;
+  height: 65px;
+  border: 3px solid #E45825;
+  background-color: #ffffff;
+  color: #221E53;
+  font-family: "AzoSansBold";
+  font-size: 22px;
+  text-align: center;
+  background-image: url(../img/icon_upload.png);
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  margin: auto;
+}
+
+.inscricao .wrapper #TalentShow .upload a:hover {
+  background-color: #E45825;
+  border: 3px solid #ffffff;
+}
+
+.inscricao .wrapper #TalentShow .upload span {
+  display: block;
+  padding-top: 10px;
+  font-family: "AzoSansLight";
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.inscricao .wrapper #TalentShow p {
+  text-align: center;
+  font-family: "AzoSansMedium";
+  font-size: 24px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.inscricao .wrapper #TalentShow form {
+  margin: auto;
+  width: 345px;
+}
+
+.inscricao .wrapper #TalentShow form div.nome {
+  padding-bottom: 30px;
+}
+
+.inscricao .wrapper #TalentShow form div.nome input {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inscricao .wrapper #TalentShow form div.date-phone {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inscricao .wrapper #TalentShow form div.date-phone .date input {
+  width: 115px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inscricao .wrapper #TalentShow form div.date-phone .phone input {
+  width: 65px;
+  text-align: center;
+}
+
+.inscricao .wrapper #TalentShow form div.date-phone .phone input:last-child {
+  width: 120px;
+  text-align: center;
+}
+
+.inscricao .wrapper #TalentShow form div.email {
+  padding-bottom: 10px;
+}
+
+.inscricao .wrapper #TalentShow form div.email input {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inscricao .wrapper #TalentShow form div.obrigatorio {
+  font-family: "AzoSansLight";
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.inscricao .wrapper #TalentShow form div.termos {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+
+.inscricao .wrapper #TalentShow form div.termos div input {
+  width: 30px;
+  margin: 0;
+  margin-top: -5px;
+  margin-right: 15px;
+}
+
+.inscricao .wrapper #TalentShow form div.termos div span {
+  font-family: "AzoSansLight";
+  font-size: 16px;
+  color: #ffffff;
+  text-align: justify;
+  display: block;
+}
+
+.inscricao .wrapper #TalentShow form div.termos div span a {
+  font-family: "AzoSansBold";
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.inscricao .wrapper #TalentShow form div.termos div span a:hover {
+  color: #E45825;
+}
+
+.inscricao .wrapper #TalentShow form div.autorizacao {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+
+.inscricao .wrapper #TalentShow form div.autorizacao div input {
+  width: 30px;
+  margin: 0;
+  margin-top: -5px;
+  margin-right: 15px;
+}
+
+.inscricao .wrapper #TalentShow form div.autorizacao div span {
+  font-family: "AzoSansLight";
+  font-size: 16px;
+  color: #ffffff;
+  text-align: justify;
+  display: block;
+}
+
+.inscricao .wrapper #TalentShow form div.autorizacao div span a {
+  font-family: "AzoSansBold";
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.inscricao .wrapper #TalentShow form div.autorizacao div span a:hover {
+  color: #E45825;
+}
+
+.inscricao .wrapper #TalentShow form div.enviar {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.inscricao .wrapper #TalentShow form div.enviar div {
+  width: 185px;
+  height: 50px;
+  border: 3px solid #E45825;
+  position: relative;
+  margin: auto;
+}
+
+.inscricao .wrapper #TalentShow form div.enviar div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
+  height: 50px;
+  color: #221E53;
+  border: 3px solid #E45825;
+  background-color: #ffffff;
+  font-family: "AzoSansBold";
+  font-size: 24px;
+  text-transform: uppercase;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.inscricao .wrapper #TalentShow form div.enviar div a:hover {
+  background: #088CCC;
+  color: #ffffff;
+}
+
+.inscricao .wrapper #TalentShow form div label {
+  display: block;
+  font-family: "AzoSansLight";
+  font-size: 14px;
+  color: #ffffff;
+  padding-bottom: 5px;
+}
+
+.inscricao .wrapper #TalentShow form div input {
+  background-color: #088CCC;
+  height: 40px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: "AzoSansRegular";
+  font-size: 16px;
+}
+
+.inscricao .wrapper #TalentShow form div input::placeholder {
+  color: #ffffff;
+  font-family: "AzoSansRegular";
+  font-size: 16px;
+}
+
+.inscricao .wrapper #TalentShow form div input:focus {
+  outline: 0;
+}
+
+.inscricao .wrapper #Podcast {
+  background-color: #E45825;
+  padding-top: 75px;
+}
+
+.inscricao .wrapper #Podcast .upload {
+  text-align: center;
+}
+
+.inscricao .wrapper #Podcast .upload a {
+  display: flex;
+  align-items: center;
+  padding-left: 65px;
+  width: 350px;
+  height: 65px;
+  border: 3px solid #E45825;
+  background-color: #ffffff;
+  color: #221E53;
+  font-family: "AzoSansBold";
+  font-size: 22px;
+  text-align: center;
+  background-image: url(../img/icon_upload.png);
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  margin: auto;
+}
+
+.inscricao .wrapper #Podcast .upload a:hover {
+  background-color: #E45825;
+  border: 3px solid #ffffff;
+}
+
+.inscricao .wrapper #Podcast .upload span {
+  display: block;
+  padding-top: 10px;
+  font-family: "AzoSansLight";
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.inscricao .wrapper #Podcast p {
+  text-align: center;
+  font-family: "AzoSansMedium";
+  font-size: 24px;
+  padding-bottom: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.inscricao .wrapper #Podcast form {
+  margin: auto;
+  width: 375px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.inscricao .wrapper #Podcast form div.nome {
+  padding-bottom: 30px;
+}
+
+.inscricao .wrapper #Podcast form div.nome input {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inscricao .wrapper #Podcast form div.date-phone {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inscricao .wrapper #Podcast form div.date-phone .date input {
+  width: 115px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inscricao .wrapper #Podcast form div.date-phone .phone input {
+  width: 65px;
+  text-align: center;
+}
+
+.inscricao .wrapper #Podcast form div.date-phone .phone input:last-child {
+  width: 120px;
+  text-align: center;
+}
+
+.inscricao .wrapper #Podcast form div.email {
+  padding-bottom: 10px;
+}
+
+.inscricao .wrapper #Podcast form div.email input {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inscricao .wrapper #Podcast form div.obrigatorio {
+  font-family: "AzoSansLight";
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.inscricao .wrapper #Podcast form div.termos {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+
+.inscricao .wrapper #Podcast form div.termos div input {
+  width: 30px;
+  margin: 0;
+  margin-top: -5px;
+  margin-right: 15px;
+}
+
+.inscricao .wrapper #Podcast form div.termos div span {
+  font-family: "AzoSansLight";
+  font-size: 16px;
+  color: #ffffff;
+  text-align: justify;
+  display: block;
+}
+
+.inscricao .wrapper #Podcast form div.termos div span a {
+  font-family: "AzoSansBold";
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.inscricao .wrapper #Podcast form div.termos div span a:hover {
+  color: #E45825;
+}
+
+.inscricao .wrapper #Podcast form div.autorizacao {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+
+.inscricao .wrapper #Podcast form div.autorizacao div input {
+  width: 30px;
+  margin: 0;
+  margin-top: -5px;
+  margin-right: 15px;
+}
+
+.inscricao .wrapper #Podcast form div.autorizacao div span {
+  font-family: "AzoSansLight";
+  font-size: 16px;
+  color: #ffffff;
+  text-align: justify;
+  display: block;
+}
+
+.inscricao .wrapper #Podcast form div.autorizacao div span a {
+  font-family: "AzoSansBold";
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.inscricao .wrapper #Podcast form div.autorizacao div span a:hover {
+  color: #E45825;
+}
+
+.inscricao .wrapper #Podcast form div.enviar {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.inscricao .wrapper #Podcast form div.enviar div {
+  width: 185px;
+  height: 50px;
+  border: 3px solid #088CCC;
+  position: relative;
+  margin: auto;
+}
+
+.inscricao .wrapper #Podcast form div.enviar div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
+  height: 50px;
+  color: #221E53;
+  border: 3px solid #088CCC;
+  background-color: #ffffff;
+  font-family: "AzoSansBold";
+  font-size: 24px;
+  text-transform: uppercase;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.inscricao .wrapper #Podcast form div.enviar div a:hover {
+  background: #E45825;
+  color: #ffffff;
+}
+
+.inscricao .wrapper #Podcast form div label {
+  display: block;
+  font-family: "AzoSansLight";
+  font-size: 14px;
+  color: #ffffff;
+  padding-bottom: 5px;
+}
+
+.inscricao .wrapper #Podcast form div input {
+  background-color: #E45825;
+  height: 40px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: "AzoSansRegular";
+  font-size: 16px;
+}
+
+.inscricao .wrapper #Podcast form div input::placeholder {
+  color: #ffffff;
+  font-family: "AzoSansRegular";
+  font-size: 16px;
+}
+
+.inscricao .wrapper #Podcast form div input:focus {
+  outline: 0;
+}
+
+.inscricao .setas-down {
+  position: absolute;
+  top: 920px;
+  left: calc(50% - 625px);
+  animation-name: arrows;
+  animation-duration: 8s;
+  z-index: 99999;
+}
+
+.inscricao .estrela {
+  position: absolute;
+  top: 720px;
+  right: calc(50% - 800px);
+  animation-name: spin;
+  animation-duration: 8s;
+}
+
+@keyframes arrows {
+  0% {
+    left: calc(50% - 625px);
+    top: 424px;
+  }
+  100% {
+    left: calc(50% - 625px);
+    top: 920px;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: AzoSansBlack;
+  src: url(../font/AzoSans-Black.ttf);
+}
+
+@font-face {
+  font-family: AzoSansBlackItalic;
+  src: url(../font/AzoSans-BlackItalic.ttf);
+}
+
+@font-face {
+  font-family: AzoSansBold;
+  src: url(../font/AzoSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: AzoSansBoldItalic;
+  src: url(../font/AzoSans-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: AzoSansItalic;
+  src: url(../font/AzoSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: AzoSansLight;
+  src: url(../font/AzoSans-Light.ttf);
+}
+
+@font-face {
+  font-family: AzoSansLightItalic;
+  src: url(../font/AzoSans-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: AzoSansMedium;
+  src: url(../font/AzoSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: AzoSansMediumItalic;
+  src: url(../font/AzoSans-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: AzoSansRegular;
+  src: url(../font/AzoSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: AzoSansThin;
+  src: url(../font/AzoSans-Thin.ttf);
+}
+
+@font-face {
+  font-family: AzoSansThinItalic;
+  src: url(../font/AzoSans-ThinItalic.ttf);
+}
+/*# sourceMappingURL=main.css.map */
